@@ -9,7 +9,7 @@ Boundless is a clean, responsive website showcasing the evolution phases of micr
 - Fullscreen landing section with a gradient background and animated title text.  
 - Timeline section displaying multiple evolution phases in a clean card layout.  
 - Responsive design for desktop, tablet, and mobile.  
-- Custom fonts: `Thuast`, `Space Mono`, and `Noto Sans Mono`.  
+- Custom fonts: `Thuast`, and `Noto Sans Mono`.  
 - Animated hover effects on timeline cards.  
 - Floating decorative elements for visual interest.  
 - Smooth CSS-based transitions and text animations.
