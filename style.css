@@ -1,0 +1,94 @@
+body {
+  background: #fff;
+  color: #222;
+  font-family: 'NotoSansMono', monospace, Arial, sans-serif;
+  /* make popup significantly wider for clearer images */
+  width: 900px;
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 8px 48px rgba(80,51,255,0.12);
+}
+
+h1 {
+  font-family: 'Thuast', cursive;
+  color: #5033FF;
+  font-size: 1.7em;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #5033ff22;
+}
+
+.upload-section {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+button {
+  background: #5033FF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 16px;
+  font-family: 'NotoSansMono', monospace;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 8px #5033ff22;
+}
+button:hover {
+  background: #222;
+}
+
+.images-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 12px;
+  align-items: flex-start;
+  /* allow wrapping on small windows */
+  flex-wrap: wrap;
+}
+
+.images-section > div {
+  flex: 1;
+  text-align: center;
+}
+
+.img-label {
+  display: block;
+  font-size: 0.9em;
+  color: #888;
+  margin-bottom: 4px;
+  font-family: 'NotoSansMono', monospace;
+}
+
+.preview-img {
+  /* larger previews for clear annotation visibility */
+  width: 420px;
+  height: 420px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #f3f3f7;
+  border: 2px solid #5033FF22;
+  box-shadow: 0 2px 8px #5033ff11;
+  margin-bottom: 4px;
+  display: block;
+  font-size: 1.1em;
+}
+
+.output-text {
+  margin-top: 8px;
+  color: #5033FF;
+  font-size: 0.95em;
+  font-family: 'NotoSansMono', monospace;
+  word-break: break-all;
+}
+
+/* responsive */
+@media (max-width: 940px) {
+  body { width: 92vw; padding: 16px; }
+  .preview-img { width: 90vw; height: 90vw; max-width: 420px; max-height: 420px; }
+  .images-section { flex-direction: column; gap: 20px; }
+}
